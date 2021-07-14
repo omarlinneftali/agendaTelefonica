@@ -1,0 +1,3 @@
+const existContact = () => {
+  return con;
+};
