@@ -1,4 +1,4 @@
-# agendaTelefonica
+# AgendaTelefonica
 Agenda Telefónica Hecha en NodeJs, Mysql y React
 
 # Pasos para utilizar el proyecto:
