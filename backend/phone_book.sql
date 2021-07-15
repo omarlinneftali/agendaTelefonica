@@ -1,0 +1,8 @@
+CREATE DATABASE phone_book;
+use phone_book;
+CREATE TABLE contacts (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(30),
+phone VARCHAR(20),
+photo VARCHAR(100)
+)
