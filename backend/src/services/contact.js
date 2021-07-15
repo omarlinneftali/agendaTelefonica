@@ -5,8 +5,8 @@ const {
 } = require("../validations");
 
 const operationTypes = {
-  delete: "Eliminado de contacto",
-  update: "Actualizado de contacto",
+  delete: "eliminado de contacto",
+  update: "actualizado de contacto",
 };
 const validateExistenceContact = async (id) => {
   try {
@@ -25,7 +25,7 @@ const validateContactData = ({ name, phone }) => {
   if (isEmpty(name)) throw new Error("No se especifico un nombre");
   if (!hasEnoughLength(name, minumNameLength))
     throw new Error(
-      `El nombre Especificado debe ser mayor a  ${minumNameLength}`
+      `El nombre especificado debe ser mayor a  ${minumNameLength}`
     );
 };
 const validateAffectedContactsCount = (

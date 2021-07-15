@@ -10,3 +10,8 @@ export function isValidPhone(string = "") {
   if (string && string.match(regEx)) return true;
   else return false;
 }
+
+export const hasEnoughLength = (string, minimunCount) => {
+  if (string?.length >= minimunCount) return true;
+  else return false;
+};

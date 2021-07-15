@@ -4,9 +4,9 @@ const {
 } = require("../enums");
 
 const successMessages = {
-  created: "contacto Creado exitosamente",
-  deleted: "contacto Eliminado exitosamente",
-  update: "contacto Actualizado exitosamente",
+  created: "Contacto Creado exitosamente",
+  deleted: "Contacto eliminado exitosamente",
+  update: "Contacto actualizado exitosamente",
 };
 
 const getResponse = (message, success = true, data = null) => {

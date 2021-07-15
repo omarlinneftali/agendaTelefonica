@@ -2,6 +2,8 @@ import React from "react";
 import Table from "../commons/Table";
 import { Input } from "../commons/Inputs";
 import { ButtonEdit, ButtonDelete } from "../commons/Button";
+import contactDefaultImage from "../../assets/images/contact.png";
+
 const ContactsTable = ({ data, handleEditContact, handleDeleteContact }) => {
   const columns = [
     {
@@ -11,6 +13,26 @@ const ContactsTable = ({ data, handleEditContact, handleDeleteContact }) => {
     {
       Header: "Nombre",
       accessor: "name",
+    },
+    {
+      Header: "Foto",
+
+      Cell: ({ original: contact }) => {
+        return (
+          <>
+            <div className="d-flex justify-content-center p-3">
+              <img
+                width="42"
+                className="rounded-circle  
+                "
+                src={contact.photo}
+                alt="contact_image"
+                onError={(e) => (e.target.src = `${contactDefaultImage}`)}
+              />
+            </div>
+          </>
+        );
+      },
     },
 
     {

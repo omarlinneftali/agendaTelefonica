@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import ContactForm from "../components/contacts/ContactForm";
-import ContactList from "../components/contacts/ContactList";
+import { ContactForm, ContactList } from "../components/contacts";
 function AppRoutes() {
   return (
     <>

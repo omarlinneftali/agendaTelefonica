@@ -21,7 +21,7 @@ export function saveContact(contact) {
       return http.put(getUrl(contact.id), contact);
     }
 
-    return http.post(apiUrl, contact);
+    return http.post(apiEndpoint, contact);
   } catch (error) {
     console.error("error al enviar", contact);
   }
